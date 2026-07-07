@@ -216,3 +216,39 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ==========================================
+# Terraform
+# ==========================================
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+terraform.tfvars
+*.auto.tfvars
+
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Keep Terraform provider lock files
+!.terraform.lock.hcl
+
+# ==========================================
+# AWS
+# ==========================================
+.aws-sam/
+
+# ==========================================
+# macOS
+# ==========================================
+.DS_Store
+
+# ==========================================
+# IDE
+# ==========================================
+.vscode/
+.idea/
