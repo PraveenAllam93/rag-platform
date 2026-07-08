@@ -1,0 +1,3 @@
+project_name = "rag-platform"
+environment = "dev"
+aws_region = "ap-south-1"

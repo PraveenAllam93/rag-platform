@@ -1,0 +1,61 @@
+version = 1
+revision = 2
+requires-python = ">=3.12"
+
+[manifest]
+members = [
+    "common",
+    "ingestion-worker",
+    "models",
+    "rag-logging",
+    "rag-platform",
+    "retrieval-api",
+    "security",
+    "upload-api",
+    "utils",
+]
+
+[[package]]
+name = "common"
+version = "0.1.0"
+source = { virtual = "packages/common" }
+
+[[package]]
+name = "ingestion-worker"
+version = "0.1.0"
+source = { virtual = "apps/ingestion-worker" }
+
+[[package]]
+name = "models"
+version = "0.1.0"
+source = { virtual = "packages/models" }
+
+[[package]]
+name = "rag-logging"
+version = "0.1.0"
+source = { virtual = "packages/rag-logging" }
+
+[[package]]
+name = "rag-platform"
+version = "0.1.0"
+source = { virtual = "." }
+
+[[package]]
+name = "retrieval-api"
+version = "0.1.0"
+source = { virtual = "apps/retrieval-api" }
+
+[[package]]
+name = "security"
+version = "0.1.0"
+source = { virtual = "packages/security" }
+
+[[package]]
+name = "upload-api"
+version = "0.1.0"
+source = { virtual = "apps/upload-api" }
+
+[[package]]
+name = "utils"
+version = "0.1.0"
+source = { virtual = "packages/utils" }
