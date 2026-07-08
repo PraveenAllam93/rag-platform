@@ -12,12 +12,28 @@ variable "bucket_name" {
   }
 }
 
+variable "versioning_enabled" {
+  description = "Enable S3 bucket versioning."
+
+  type = bool
+
+  default = true
+}
+
 variable "force_destroy" {
   description = "Allow Terraform to delete a non-empty bucket."
 
   type = bool
 
   default = false
+}
+
+variable "lifecycle_days" {
+  description = "Delete objects after this many days. Null disables lifecycle expiration."
+  
+  type = number
+
+  default = null
 }
 
 variable "tags" {

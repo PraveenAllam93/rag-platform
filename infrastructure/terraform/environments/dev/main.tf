@@ -5,6 +5,8 @@ module "documents_bucket" {
 
   bucket_name = "rag-platform-dev-documents"
 
+  lifecycle_days = 30
+
   tags = {
     Service = "upload-api"
   }
@@ -14,6 +16,8 @@ module "processed_bucket" {
   source = "../../modules/s3"
 
   bucket_name = "rag-platform-dev-processed"
+
+  lifecycle_days = 30
 
   tags = {
     Service = "ingestion-worker"
